@@ -25,15 +25,15 @@ const JobDetailsForm: React.FC<{
       }),
       onSubmit: (values) => {
         console.log("Form submitted, navigating to interview tab...");
-        console.log(values); // Check form data before navigating
+        console.log(values); 
         setFormData(values);
-        handleTab(2); // Or use the appropriate value for the next tab
+        handleTab(2); 
       },
       validateOnChange: true,
     });
 
   React.useEffect(() => {
-    console.log("Form values updated", values); // Check if values are being updated
+    console.log("Form values updated", values); 
     setFormData(values);
   }, [values, setFormData, errors]);
 

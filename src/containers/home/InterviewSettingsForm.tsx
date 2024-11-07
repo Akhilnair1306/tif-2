@@ -43,7 +43,7 @@ const InterviewDetailsForm: React.FC<{
   });
 
   React.useEffect(() => {
-    console.log("Form values updated", values); // Check if values are being updated
+    console.log("Form values updated", values); 
     setFormData(values);
   }, [values, setFormData, errors]);
 
